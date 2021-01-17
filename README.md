@@ -2,7 +2,7 @@
 
 **Author**: Andrea Cabello
 
-## Overview
+## Abstract
 
 A one-paragraph overview of the project, including the business problem, data, methods, results and recommendations.
 
