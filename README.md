@@ -1,90 +1,71 @@
-# Title
+# Capstone Project: Analyzing Airbnb New User Bookings
 
 **Author**: Andrea Cabello
 
 ## Abstract
 
-A one-paragraph overview of the project, including the business problem, data, methods, results and recommendations.
+We examined Airbnb demand, among first time users from the USA. 
+The data was provided in the form of multiple data sets by Airbnb itself as a challenge on Kaggle.
+I grabbed the train_data set provided and performed my own train_test_split.
+We created a feature "effective_booking" with values True or False and built a binary classification model (random forest model) to predict if a customer will end up booking or not.
+what is happening? what defines if a customer ends up booking or not at a granular or overall level?
+We discovered only 42% of users end up booking and explored what could be causing this.
+Then we built a classifier using a XGBoost model to predict of those who book where are they going? obtaining a 87.59% validation Accuracy Score.
+
+
 
 ## Business Problem
 
-Summary of the business problem you are trying to solve, and the data questions that you plan to answer in order to solve them.
-
-***
-Questions to consider:
-* What are the business's pain points related to this project?
-* How did you pick the data analysis question(s) that you did?
-* Why are these questions important from a business perspective?
+1. Predict whether a new airbnb user will effectively book a destination or not.
+2. Predict which country a new airbnb user's first booking destination will be.
 ***
 
 ## Data
 
-Describe the data being used for this project.
+https://www.kaggle.com/c/airbnb-recruiting-new-user-bookings/data
+
 
 ***
-Questions to consider:
-* Where did the data come from, and how do they relate to the data analysis questions?
-* What do the data represent? Who is in the sample and what variables are included?
-* What is the target variable?
-* What are the properties of the variables you intend to use?
+* 213451 total observations (users).
+* 124543 NDF (no destination found) makes up for more than half of users in our dataset (58%).
+* Number of actual bookings: 88908
+* US represents domestic travel, which is 70% of all bookings in our data set.
 ***
 
 ## Methods
 
-Describe the process for analyzing or modeling the data. For Phase 1, this will be descriptive analysis.
+OSEMN
+Feature Engineering 
+Random Forest Classifier
+XGBoost Classifier
 
-***
-Questions to consider:
-* How did you prepare, analyze or model the data?
-* Why is this approach appropriate given the data and the business problem?
 ***
 
 ## Results
 
-Present your key results. For Phase 1, this will be findings from your descriptive analysis.
+Training Accuracy for Random Forest: 68.61%
+Test Accuracy for Random Forest: 54.1%
 
 ***
+
+Training Accuracy for XGB Classifier : 87.56%
+Validation accuracy for XBG Classifier: 87.59%
+
 Questions to consider:
 * How do you interpret the results?
 * How confident are you that your results would generalize beyond the data you have?
 ***
 
-Here is an example of how to embed images from your sub-folder:
+
 
 ### Visual 1
-![graph1](./images/viz1.png)
+![graph1](./images/effective.png)
 
-## Conclusions
 
-Provide your conclusions about the work you've done, including any limitations or next steps.
+## Conclusions & Future Work
+
+* As the dataset contained new users information, the value 'unknown' appeared often in several categories. Considering this, the fact that we were able to predict destinations with high accuracy is surprisingly good. 
+* Our binary classification model could be improved but it is still quite helpful to somewhat understand what are the common traits among first time users that will end up booking a destination vs those who won't.
 
 ***
-Questions to consider:
-* What would you recommend the business do as a result of this work?
-* What are some reasons why your analysis might not fully solve the business problem?
-* What else could you do in the future to improve this project?
-***
 
-## For More Information
-
-Please review our full analysis in [our Jupyter Notebook](./dsc-phase1-project-template.ipynb) or our [presentation](./DS_Project_Presentation.pdf).
-
-For any additional questions, please contact **name & email, name & email**
-
-## Repository Structure
-
-Describe the structure of your repository and its contents, for example:
-
-```
-├── __init__.py                         <- .py file that signals to python these folders contain packages
-├── README.md                           <- The top-level README for reviewers of this project
-├── dsc-phase1-project-template.ipynb   <- Narrative documentation of analysis in Jupyter notebook
-├── DS_Project_Presentation.pdf         <- PDF version of project presentation
-├── code
-│   ├── __init__.py                     <- .py file that signals to python these folders contain packages
-│   ├── visualizations.py               <- .py script to create finalized versions of visuals for project
-│   ├── data_preparation.py             <- .py script used to pre-process and clean data
-│   └── eda_notebook.ipynb              <- Notebook containing data exploration
-├── data                                <- Both sourced externally and generated from code
-└── images                              <- Both sourced externally and generated from code
-```
