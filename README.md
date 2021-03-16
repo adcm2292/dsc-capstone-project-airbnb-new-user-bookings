@@ -34,10 +34,10 @@ https://www.kaggle.com/c/airbnb-recruiting-new-user-bookings/data
 
 ## Methods
 
-OSEMN
-Feature Engineering 
-Random Forest Classifier
-XGBoost Classifier
+* OSEMN
+* Feature Engineering 
+* Random Forest Classifier
+* XGBoost Classifier
 
 ***
 
