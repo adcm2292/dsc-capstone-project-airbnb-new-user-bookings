@@ -62,7 +62,7 @@ Questions to consider:
 ![graph1](./images/effective.png)
 
 ### US First Time Users by Gender
-![graph2](./images/USfirstTimeUsersByGender.png)
+![graph2](./images/USbyGender.png)
 
 
 ## Conclusions & Future Work
