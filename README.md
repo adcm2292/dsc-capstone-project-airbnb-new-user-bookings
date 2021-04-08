@@ -58,8 +58,11 @@ Questions to consider:
 
 
 
-### Visual 1
+### True Bookings
 ![graph1](./images/effective.png)
+
+### US First Time Users by Gender
+![graph2](./images/USfirstTimeUsersByGender.png)
 
 
 ## Conclusions & Future Work
