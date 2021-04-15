@@ -32,6 +32,14 @@ https://www.kaggle.com/c/airbnb-recruiting-new-user-bookings/data
 * US represents domestic travel, which is 70% of all bookings in our data set.
 ***
 
+
+### True Bookings
+![graph1](./images/effective.png)
+
+### Users by age and gender
+![graph2](./images/us.png)
+
+
 ## Methods
 
 * OSEMN
@@ -39,30 +47,28 @@ https://www.kaggle.com/c/airbnb-recruiting-new-user-bookings/data
 * Random Forest Classifier
 * XGBoost Classifier
 
+### Feature Importance
+![graph3](./images/featureimportance.png)
 ***
+
 
 ## Results
 
 Training Accuracy for Random Forest: 68.61%
 Test Accuracy for Random Forest: 54.1%
 
+### Random Forest
+![graph4](./images/randomforest.png)
+
 ***
 
 Training Accuracy for XGB Classifier : 87.56%
 Validation accuracy for XBG Classifier: 87.59%
-
-Questions to consider:
-* How do you interpret the results?
-* How confident are you that your results would generalize beyond the data you have?
+![graph5](./images/country.png)
 ***
 
 
 
-### True Bookings
-![graph1](./images/effective.png)
-
-### Random Forest
-![graph2](./images/randomforest.png)
 
 
 ## Conclusions & Future Work
