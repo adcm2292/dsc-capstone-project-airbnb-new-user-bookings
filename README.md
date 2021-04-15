@@ -61,8 +61,8 @@ Questions to consider:
 ### True Bookings
 ![graph1](./images/effective.png)
 
-### US First Time Users by Gender
-![graph2](./images/USbyGender.png)
+### Random Forest
+![graph2](./images/randomforest.png)
 
 
 ## Conclusions & Future Work
