@@ -36,9 +36,10 @@ https://www.kaggle.com/c/airbnb-recruiting-new-user-bookings/data
 ### True Bookings
 ![graph1](./images/effective.png)
 
-### Users by age and gender
-![graph2](./images/us.png)
 
+### Users by Age and Gender
+![graph2](./images/us.png)
+***
 
 ## Methods
 
@@ -46,7 +47,7 @@ https://www.kaggle.com/c/airbnb-recruiting-new-user-bookings/data
 * Feature Engineering 
 * Random Forest Classifier
 * XGBoost Classifier
-
+***
 ### Feature Importance
 ![graph3](./images/featureimportance.png)
 ***
@@ -54,16 +55,20 @@ https://www.kaggle.com/c/airbnb-recruiting-new-user-bookings/data
 
 ## Results
 
-Training Accuracy for Random Forest: 68.61%
-Test Accuracy for Random Forest: 54.1%
-
 ### Random Forest
+* Training Accuracy for Random Forest: 68.61%
+* Test Accuracy for Random Forest: 54.1%
+
+
+
 ![graph4](./images/randomforest.png)
 
 ***
 
-Training Accuracy for XGB Classifier : 87.56%
-Validation accuracy for XBG Classifier: 87.59%
+### XGBoost
+* Training Accuracy for XGB Classifier : 87.56%
+* Validation accuracy for XBG Classifier: 87.59%
+
 ![graph5](./images/country.png)
 ***
 
